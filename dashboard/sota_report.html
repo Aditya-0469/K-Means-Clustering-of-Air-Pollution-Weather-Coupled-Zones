@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>SOTA Report | SIH26082 ClusterAir</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header class="topbar" id="topbar">
+  <div class="topbar-inner container">
+    <a href="index.html" class="brand"><div class="brand-logo"><span class="brand-logo-icon">⬡</span><div class="brand-logo-text"><span class="brand-name">ClusterAir</span><span class="brand-tag">SIH26082</span></div></div></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="nav-item"><span class="nav-icon">🏠</span><span>Home</span></a>
+      <a href="methodology.html" class="nav-item"><span class="nav-icon">⚙️</span><span>Methodology</span></a>
+      <a href="results.html" class="nav-item"><span class="nav-icon">📊</span><span>Results</span></a>
+      <a href="validation.html" class="nav-item"><span class="nav-icon">✅</span><span>Validation</span></a>
+      <a href="map.html" class="nav-item"><span class="nav-icon">🗺️</span><span>Zone Map</span></a>
+      <a href="about.html" class="nav-item"><span class="nav-icon">👤</span><span>About</span></a>
+    </nav>
+    <div class="topbar-profile"><div class="profile-pill"><div class="profile-avatar">AT</div><div class="profile-info"><span class="profile-name">Aditya Tanzal</span><span class="profile-reg">Reg: 12410040 · Roll: 15</span></div></div><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="container page-hero-content">
+    <div class="page-breadcrumb"><a href="index.html">Home</a><span>/</span><span>SOTA Report</span></div>
+    <div class="section-tag">Academic Report</div>
+    <h1>State of the Art <em>Report</em></h1>
+    <p>Comprehensive literature review of 15 papers (2016–2024) covering clustering-based air quality analysis, meteorological coupling, ML forecasting for Delhi NCR, and GRAP episode validation.</p>
+    <div style="margin-top:24px"><span style="font-size:13px;color:var(--txt-2)">Full report available as DOCX: </span><code style="color:var(--teal);font-size:13px">SIH26082_SOTA_Report_Aditya_Tanzal.docx</code></div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container" style="display:grid;grid-template-columns:280px 1fr;gap:40px;align-items:start">
+    <!-- TOC -->
+    <div style="position:sticky;top:calc(var(--topbar-h) + 24px)">
+      <div class="glass-card">
+        <div style="font-size:12px;font-weight:700;color:var(--txt-3);text-transform:uppercase;letter-spacing:1px;margin-bottom:16px">Table of Contents</div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <a href="#s1" style="font-size:13px;color:var(--txt-2);padding:6px 10px;border-radius:var(--radius-xs);transition:all 0.2s" onmouseover="this.style.background='rgba(59,130,246,0.1)';this.style.color='var(--blue)'" onmouseout="this.style.background='';this.style.color='var(--txt-2)'">1. Introduction</a>
+          <a href="#s2" style="font-size:13px;color:var(--txt-2);padding:6px 10px;border-radius:var(--radius-xs);transition:all 0.2s" onmouseover="this.style.background='rgba(59,130,246,0.1)';this.style.color='var(--blue)'" onmouseout="this.style.background='';this.style.color='var(--txt-2)'">2. Literature Review</a>
+          <a href="#s3" style="font-size:13px;color:var(--txt-2);padding:6px 10px;border-radius:var(--radius-xs);transition:all 0.2s" onmouseover="this.style.background='rgba(59,130,246,0.1)';this.style.color='var(--blue)'" onmouseout="this.style.background='';this.style.color='var(--txt-2)'">3. Methodology</a>
+          <a href="#s4" style="font-size:13px;color:var(--txt-2);padding:6px 10px;border-radius:var(--radius-xs);transition:all 0.2s" onmouseover="this.style.background='rgba(59,130,246,0.1)';this.style.color='var(--blue)'" onmouseout="this.style.background='';this.style.color='var(--txt-2)'">4. Timeline</a>
+          <a href="#s5" style="font-size:13px;color:var(--txt-2);padding:6px 10px;border-radius:var(--radius-xs);transition:all 0.2s" onmouseover="this.style.background='rgba(59,130,246,0.1)';this.style.color='var(--blue)'" onmouseout="this.style.background='';this.style.color='var(--txt-2)'">5. References</a>
+        </div>
+        <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border)">
+          <div style="font-size:11px;color:var(--txt-3);margin-bottom:8px">Author Details</div>
+          <div style="font-size:13px;color:var(--txt-1);font-weight:600">Aditya Tanzal</div>
+          <div style="font-size:11px;color:var(--txt-3)">Reg: 12410040 · Roll: 15</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div>
+      <div class="glass-card reveal sota-section" id="s1">
+        <h3>1. Introduction</h3>
+        <p style="color:var(--txt-2);line-height:1.9;margin-bottom:14px">Air pollution remains one of the most pressing environmental and public health challenges in India, with the Delhi National Capital Region (NCR) consistently ranking among the most polluted urban agglomerations globally [1]. The NCR encompasses a heterogeneous landscape spanning approximately 55,000 km², including Delhi and satellite cities Noida, Ghaziabad, Faridabad, Gurugram, Sonepat, and Bahadurgarh — each exhibiting distinct emission profiles and divergent air quality behaviours.</p>
+        <p style="color:var(--txt-2);line-height:1.9;margin-bottom:14px">A critical limitation of the current operational framework is the treatment of Delhi NCR as a spatially homogeneous entity. The Graded Response Action Plan (GRAP), the primary emergency-response mechanism, applies blanket restrictions without differentiating between an industrial corridor in Ghaziabad and a residential green belt in Dwarka [3]. Studies show GRAP's effectiveness remains below 40% [12], with much improvement attributable to meteorological variability rather than policy.</p>
+        <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.2);border-radius:var(--radius-sm);padding:16px;margin-top:16px">
+          <div style="font-size:12px;font-weight:700;color:var(--blue);margin-bottom:10px">PROJECT OBJECTIVES</div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div style="font-size:13px;color:var(--txt-2)"><strong style="color:var(--blue)">O1</strong> — Compile coupled AQ + meteorological feature vectors across 18 Delhi NCR CAAQMS stations (2021–2024)</div>
+            <div style="font-size:13px;color:var(--txt-2)"><strong style="color:var(--blue)">O2</strong> — Apply K-Means with optimal k selection (Elbow + Silhouette + Davies-Bouldin + Calinski-Harabász)</div>
+            <div style="font-size:13px;color:var(--txt-2)"><strong style="color:var(--blue)">O3</strong> — Profile each cluster's pollution-weather behaviour signature</div>
+            <div style="font-size:13px;color:var(--txt-2)"><strong style="color:var(--blue)">O4</strong> — Validate clusters against historical GRAP episode severity records (2021–2025)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card reveal sota-section" id="s2">
+        <h3>2. Literature Review</h3>
+        <p style="color:var(--txt-2);line-height:1.9;margin-bottom:20px">Research is grouped into four thematic clusters: (A) clustering-based zone identification, (B) meteorological influence, (C) ML forecasting, (D) GRAP validation.</p>
+
+        <div style="background:rgba(139,92,246,0.05);border:1px solid rgba(139,92,246,0.15);border-radius:var(--radius-sm);padding:16px;margin-bottom:16px">
+          <div style="font-size:12px;font-weight:700;color:var(--purple);margin-bottom:8px">A. CLUSTERING-BASED AIR QUALITY ZONE IDENTIFICATION</div>
+          <p style="font-size:13px;color:var(--txt-2);line-height:1.8">Kumar et al. [1] applied hierarchical clustering to 14 Delhi stations (2016–2020), identifying three zones with 87% land-use consistency but no meteorological coupling. Garg & Sharma [2] used K-Means (k=5) with Silhouette=0.61 but only 2 meteorological features. Zhang et al. [3] showed GMM probabilistic clustering for 50 Chinese cities. Rana et al. [4] used DBSCAN to identify 12 PM2.5 hotspots in Noida-Ghaziabad, though its sensitivity to hyperparameters limits reproducibility.</p>
+        </div>
+        <div style="background:rgba(6,182,212,0.05);border:1px solid rgba(6,182,212,0.15);border-radius:var(--radius-sm);padding:16px;margin-bottom:16px">
+          <div style="font-size:12px;font-weight:700;color:var(--teal);margin-bottom:8px">B. METEOROLOGICAL INFLUENCE ON DELHI NCR AIR QUALITY</div>
+          <p style="font-size:13px;color:var(--txt-2);line-height:1.8">Sharma et al. [5] demonstrated wind stagnation (WS &lt; 1 m/s) + high humidity amplifies PM2.5 by 2.3–3.8× — directly motivating the stagnation index feature. Venkataraman et al. [6] linked ERA5 BLH &lt; 500m to Severe AQI 78% of the time. Beig et al. [7] showed WRF-CMAQ temperature inversion increases surface PM2.5 by 150–200%.</p>
+        </div>
+        <div style="background:rgba(16,185,129,0.05);border:1px solid rgba(16,185,129,0.15);border-radius:var(--radius-sm);padding:16px;margin-bottom:16px">
+          <div style="font-size:12px;font-weight:700;color:var(--green);margin-bottom:8px">C. MACHINE LEARNING FORECASTING FOR DELHI NCR</div>
+          <p style="font-size:13px;color:var(--txt-2);line-height:1.8">Singh & Rao [8] achieved XGBoost R²=0.87 at Anand Vihar but it is station-specific. Prasad et al. [9] LSTM achieved MAE=18.3 μg/m³ but is unstable during AQI&gt;400 episodes. Patel et al. [11] showed Cluster-Informed RF reduced RMSE by 18% vs. global model in Shanghai — directly motivating this project's zone-based approach.</p>
+        </div>
+        <div style="background:rgba(249,115,22,0.05);border:1px solid rgba(249,115,22,0.15);border-radius:var(--radius-sm);padding:16px">
+          <div style="font-size:12px;font-weight:700;color:var(--orange);margin-bottom:8px">D. GRAP AND POLLUTION EPISODE VALIDATION</div>
+          <p style="font-size:13px;color:var(--txt-2);line-height:1.8">Guttikunda et al. [12] found GRAP Stage III/IV reduces AQI by only 5–12%. Chakraborty et al. [13] found industrial station compliance at 32% vs. residential 61%, confirming need for zone-specific enforcement. Kumar & Nagpure [15] source apportionment: 35–40% biomass, 25% industry — matching Cluster 1's high PM2.5+SO2+NO2 fingerprint.</p>
+        </div>
+
+        <div style="margin-top:20px">
+          <div style="font-size:13px;font-weight:700;color:var(--txt-1);margin-bottom:12px">Table 1 — Comparative Summary of Related Work</div>
+          <table class="data-table">
+            <thead><tr><th>Author, Year</th><th>Method</th><th>Dataset</th><th>Metric / Accuracy</th><th>Limitation</th></tr></thead>
+            <tbody>
+              <tr><td>Kumar et al., 2021 [1]</td><td>Hierarchical Clustering</td><td>CPCB Delhi 2016–20</td><td>87% land-use match</td><td>No met. coupling</td></tr>
+              <tr><td>Garg & Sharma, 2022 [2]</td><td>K-Means (k=5)</td><td>CPCB+IMD NCR</td><td>Sil=0.61</td><td>Only 2 met. features</td></tr>
+              <tr><td>Zhang et al., 2023 [3]</td><td>Gaussian Mixture Model</td><td>50 Chinese cities</td><td>BIC=12,350</td><td>Not interpretable for GRAP</td></tr>
+              <tr><td>Rana et al., 2022 [4]</td><td>DBSCAN</td><td>Noida-Ghaziabad 2018–22</td><td>12 hotspot zones</td><td>Hyperparameter sensitive</td></tr>
+              <tr><td>Sharma et al., 2019 [5]</td><td>Factor Analysis</td><td>CPCB Delhi 2010–18</td><td>PM2.5 ×2.3–3.8</td><td>Descriptive only</td></tr>
+              <tr><td>Venkataraman et al., 2020 [6]</td><td>ERA5 BLH Analysis</td><td>Delhi ERA5</td><td>78% Severe AQI</td><td>No station clustering</td></tr>
+              <tr><td>Beig et al., 2021 [7]</td><td>WRF-CMAQ</td><td>NCR industrial belt</td><td>+150–200% PM2.5</td><td>Computationally expensive</td></tr>
+              <tr><td>Singh & Rao, 2023 [8]</td><td>XGBoost/RF/SVR</td><td>Anand Vihar 2019–23</td><td>R²=0.87, RMSE=31.4</td><td>Station-specific only</td></tr>
+              <tr><td>Prasad et al., 2024 [9]</td><td>LSTM + Attention</td><td>Multi-station NCR</td><td>MAE=18.3 μg/m³</td><td>Unstable AQI&gt;400</td></tr>
+              <tr><td>Chen et al., 2024 [10]</td><td>Physics-Guided ML</td><td>Beijing + Shanghai</td><td>RMSE=14.1 μg/m³</td><td>Requires WRF output</td></tr>
+              <tr><td>Patel et al., 2024 [11]</td><td>Cluster-Informed RF</td><td>Shanghai 2018–23</td><td>RMSE −18%</td><td>Needs NCR adaptation</td></tr>
+              <tr><td>Guttikunda et al., 2022 [12]</td><td>GRAP Impact Analysis</td><td>Delhi 2017–21</td><td>AQI −5–12%</td><td>No ML component</td></tr>
+              <tr><td>Chakraborty et al., 2023 [13]</td><td>Spatial Compliance</td><td>NCR GRAP records</td><td>Industrial: 32%</td><td>Policy-only analysis</td></tr>
+              <tr><td>CSE Report, 2024 [14]</td><td>GRAP Monitoring</td><td>NCR CPCB data</td><td>Episode records</td><td>Data-only, no ML</td></tr>
+              <tr><td>Kumar & Nagpure, 2023 [15]</td><td>PMF Source Apportionment</td><td>NCR industrial</td><td>35–40% biomass</td><td>No temporal clustering</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="glass-card reveal sota-section" id="s3">
+        <h3>3. Proposed Methodology</h3>
+        <div class="eq-block">
+          <div class="eq-label">K-Means Objective</div>
+          <div class="eq">J = Σᵢ₌₁ᵏ Σₓ∈Cᵢ ‖x − μᵢ‖²  ...(1)</div>
+          <div class="eq-label">Silhouette Coefficient</div>
+          <div class="eq">s(i) = [b(i) − a(i)] / max{a(i), b(i)}  ...(2)</div>
+          <div class="eq-label">Stagnation Index (Engineered Feature)</div>
+          <div class="eq">SI = log₁₊(PM2.5) / (WS + 0.1)  ...(3)</div>
+          <div class="eq-desc">Feature vector x ∈ ℝ¹⁹: 12 log-pollutant features (mean + std × 6 pollutants) + 5 met means + episode fraction + stagnation index. Preprocessed with RobustScaler. k=2 selected: Silhouette=0.702, DBI=0.355, CH=513.4</div>
+        </div>
+      </div>
+
+      <div class="glass-card reveal sota-section" id="s4">
+        <h3>4. Work Plan and Timeline</h3>
+        <table class="data-table">
+          <thead><tr><th>Phase</th><th>Target Period</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Literature Survey</td><td>Month 1 (Oct 2026)</td><td style="color:var(--green);font-weight:600">Completed</td></tr>
+            <tr><td>Data Collection & Preprocessing</td><td>Month 2 (Nov 2026)</td><td style="color:var(--amber);font-weight:600">In Progress</td></tr>
+            <tr><td>Model Design & Development</td><td>Month 3 (Dec 2026)</td><td style="color:var(--txt-3)">Planned</td></tr>
+            <tr><td>Experimentation & Evaluation</td><td>Month 4 (Jan 2027)</td><td style="color:var(--txt-3)">Planned</td></tr>
+            <tr><td>Report Writing & Submission</td><td>Month 5 (Feb 2027)</td><td style="color:var(--txt-3)">Planned</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="glass-card reveal sota-section" id="s5">
+        <h3>5. References (IEEE Format)</h3>
+        <ol class="ref-list">
+          <li>P. Kumar, A. Gupta, and R. Singh, "Spatial clustering of air quality monitoring stations in Delhi using hierarchical clustering," <em>Atmospheric Environment</em>, vol. 245, p. 118021, 2021.</li>
+          <li>R. Garg and N. Sharma, "K-Means based identification of pollution zones in Delhi-NCR," <em>J. Env. Science and Technology</em>, vol. 15, no. 3, pp. 112–124, 2022.</li>
+          <li>Y. Zhang, L. Wang, and X. Chen, "GMM clustering for PM2.5 pollution regimes across Chinese megacities," <em>Sci. Total Env.</em>, vol. 850, 2023.</li>
+          <li>A. Rana, S. Mishra, and V. Tiwari, "DBSCAN-based spatial hotspot identification for PM2.5," <em>Urban Climate</em>, vol. 42, 2022.</li>
+          <li>D. Sharma, A. Bharat, and P. K. Sethi, "Stagnation meteorology and pollutant trapping in Delhi," <em>Atm. Pollution Research</em>, vol. 10, no. 6, 2019.</li>
+          <li>C. Venkataraman, P. K. Pant, and G. Tripathi, "ERA5 BLH and severe AQI events in Delhi," <em>Geophysical Research Letters</em>, vol. 47, 2020.</li>
+          <li>G. Beig, S. Srinivas, and S. Tiwari, "WRF-CMAQ simulation of pollution dispersion under inversion," <em>Env. Research Letters</em>, vol. 16, 2021.</li>
+          <li>R. Singh and V. Rao, "XGBoost, RF, SVR for next-day AQI forecasting at Anand Vihar," <em>IEEE Access</em>, vol. 11, 2023.</li>
+          <li>A. Prasad, S. Kumar, and M. Jha, "LSTM with attention for multi-station PM2.5 prediction," <em>Expert Systems with Applications</em>, vol. 238, 2024.</li>
+          <li>X. Chen, W. Liu, and Z. Zhang, "Physics-guided ML for urban PM2.5 forecasting," <em>Nature Communications</em>, vol. 15, 2024.</li>
+          <li>H. Patel, J. Zhou, and K. Lee, "Cluster-Informed RF for PM2.5 forecasting," <em>Env. Modelling & Software</em>, vol. 178, 2024.</li>
+          <li>S. K. Guttikunda, G. Nishadh, and P. Jawahar, "Air quality management policies in Delhi 2017–2021," <em>Atmospheric Environment</em>, vol. 267, 2022.</li>
+          <li>B. Chakraborty, M. Verma, and R. Agarwal, "Spatial variation in GRAP compliance," <em>Env. Science & Policy</em>, vol. 140, 2023.</li>
+          <li>CSE, "State of India's Environment – Air Quality Annual Report 2024," CSE Publications, New Delhi, 2024.</li>
+          <li>A. Kumar and A. Nagpure, "Source apportionment of PM2.5 using PMF in NCR," <em>Aerosol and Air Quality Research</em>, vol. 23, 2023.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="fg-brand"><div class="brand-logo"><span class="brand-logo-icon">⬡</span><div class="brand-logo-text"><span class="brand-name">ClusterAir</span><span class="brand-tag">SIH26082</span></div></div><p>K-Means Clustering of Air Pollution–Weather Coupled Zones</p></div>
+    <div class="fg-links"><div class="fgl-title">Pages</div><a href="index.html">Home</a><a href="methodology.html">Methodology</a><a href="results.html">Results</a><a href="validation.html">Validation</a><a href="map.html">Zone Map</a><a href="about.html">About</a></div>
+    <div class="fg-info"><div class="fgl-title">Author</div><p><strong>Aditya Tanzal</strong></p><p>Reg: 12410040 | Roll: 15</p></div>
+  </div>
+  <div class="footer-bottom container"><span>© 2026 Aditya Tanzal · SIH26082</span><span>Delhi NCR ClusterAir</span></div>
+</footer>
+<script src="app.js"></script>
+</body></html>

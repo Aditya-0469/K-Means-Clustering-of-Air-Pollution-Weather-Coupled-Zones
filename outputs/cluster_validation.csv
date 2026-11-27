@@ -1,0 +1,3 @@
+cluster_label,dominant_season,dominant_severity,ep_fraction,n_severe_days,GRAP_Stage_Expected
+Cluster 0 – Winter Industrial Hotspot,Monsoon,Severe,0.5319998164885076,11596,Stage II (Very Poor)
+Cluster 1 – Moderate Traffic-Residential,Winter,Severe+,1.0,4464,Stage IV (Severe+)

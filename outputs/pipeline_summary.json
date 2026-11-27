@@ -1,0 +1,24 @@
+{
+  "project": "SIH26082",
+  "author": "Aditya Tanzal",
+  "reg_no": "RK3P24TGA15",
+  "best_k": 2,
+  "silhouette": 0.7016954482313102,
+  "db_score": 0.35527741983286415,
+  "n_stations": 18,
+  "n_records": 26261,
+  "cluster_labels": {
+    "0": "Cluster 0 \u2013 Winter Industrial Hotspot",
+    "1": "Cluster 1 \u2013 Moderate Traffic-Residential",
+    "2": "Cluster 2 \u2013 Clean Monsoon / Green Zone",
+    "3": "Cluster 3 \u2013 Post-Monsoon Transition",
+    "4": "Cluster 4 \u2013 Summer Photochemical Zone"
+  },
+  "cluster_colors": [
+    "#E74C3C",
+    "#E67E22",
+    "#2ECC71",
+    "#3498DB",
+    "#9B59B6"
+  ]
+}

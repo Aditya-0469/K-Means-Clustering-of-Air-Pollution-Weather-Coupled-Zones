@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Results | SIH26082 ClusterAir</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header class="topbar" id="topbar">
+  <div class="topbar-inner container">
+    <a href="index.html" class="brand"><div class="brand-logo"><span class="brand-logo-icon">⬡</span><div class="brand-logo-text"><span class="brand-name">ClusterAir</span><span class="brand-tag">SIH26082</span></div></div></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="nav-item"><span class="nav-icon">🏠</span><span>Home</span></a>
+      <a href="methodology.html" class="nav-item"><span class="nav-icon">⚙️</span><span>Methodology</span></a>
+      <a href="results.html" class="nav-item active"><span class="nav-icon">📊</span><span>Results</span></a>
+      <a href="validation.html" class="nav-item"><span class="nav-icon">✅</span><span>Validation</span></a>
+      <a href="map.html" class="nav-item"><span class="nav-icon">🗺️</span><span>Zone Map</span></a>
+      <a href="about.html" class="nav-item"><span class="nav-icon">👤</span><span>About</span></a>
+    </nav>
+    <div class="topbar-profile"><div class="profile-pill"><div class="profile-avatar">AT</div><div class="profile-info"><span class="profile-name">Aditya Tanzal</span><span class="profile-reg">Reg: 12410040 · Roll: 15</span></div></div><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="container page-hero-content">
+    <div class="page-breadcrumb"><a href="index.html">Home</a><span>/</span><span>Results</span></div>
+    <div class="section-tag">Clustering Outcomes</div>
+    <h1>Results & <em>Cluster Analysis</em></h1>
+    <p>Two distinct pollution-weather zones discovered from 26,261 records across 18 Delhi NCR CAAQMS stations. Optimal k=2 selected with Silhouette Score of 0.702 — classified as Strong Structure.</p>
+  </div>
+</div>
+
+<!-- Cluster Overview -->
+<section class="section" id="cluster0">
+  <div class="container">
+    <div class="section-head"><div class="section-tag">Cluster Profiles</div><h2 class="section-title">Detailed Cluster Characterisation</h2></div>
+
+    <!-- Cluster 0 -->
+    <div class="glass-card reveal" style="border-left:4px solid #E74C3C;margin-bottom:24px">
+      <div style="display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start">
+        <div style="text-align:center;min-width:180px">
+          <div style="width:80px;height:80px;border-radius:50%;background:rgba(239,68,68,0.15);border:2px solid #E74C3C;display:grid;place-items:center;margin:0 auto 12px;font-family:'Space Grotesk',sans-serif;font-size:1.3rem;font-weight:800;color:#E74C3C">C0</div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:700;color:#E74C3C">Cluster 0</div>
+          <div style="font-size:11px;color:var(--txt-3);margin-top:4px">Broad NCR Zone</div>
+          <div style="margin-top:12px"><span class="grap-tag grap-2">Stage II</span></div>
+        </div>
+        <div>
+          <h3 id="cluster0" style="font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;margin-bottom:8px">Broad NCR — All-Season Zone</h3>
+          <p style="font-size:13px;color:var(--txt-2);margin-bottom:20px">180 station-month vectors covering the vast majority of NCR station-months across all seasons. Represents the moderate-to-severe background pollution state of the region, dominated by monsoon and spring months.</p>
+          <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px">
+            <div style="text-align:center;padding:14px;background:rgba(0,0,0,0.2);border-radius:var(--radius-sm)"><div style="font-family:'Space Grotesk',sans-serif;font-size:1.4rem;font-weight:800;color:#E74C3C">143.9</div><div style="font-size:10px;color:var(--txt-3);margin-top:4px">PM2.5 μg/m³</div></div>
+            <div style="text-align:center;padding:14px;background:rgba(0,0,0,0.2);border-radius:var(--radius-sm)"><div style="font-family:'Space Grotesk',sans-serif;font-size:1.4rem;font-weight:800;color:#f97316">310.3</div><div style="font-size:10px;color:var(--txt-3);margin-top:4px">PM10 μg/m³</div></div>
+            <div style="text-align:center;padding:14px;background:rgba(0,0,0,0.2);border-radius:var(--radius-sm)"><div style="font-family:'Space Grotesk',sans-serif;font-size:1.4rem;font-weight:800;color:#3b82f6">277.8</div><div style="font-size:10px;color:var(--txt-3);margin-top:4px">Mean AQI</div></div>
+            <div style="text-align:center;padding:14px;background:rgba(0,0,0,0.2);border-radius:var(--radius-sm)"><div style="font-family:'Space Grotesk',sans-serif;font-size:1.4rem;font-weight:800;color:#10b981">2.4</div><div style="font-size:10px;color:var(--txt-3);margin-top:4px">WS m/s</div></div>
+            <div style="text-align:center;padding:14px;background:rgba(0,0,0,0.2);border-radius:var(--radius-sm)"><div style="font-family:'Space Grotesk',sans-serif;font-size:1.4rem;font-weight:800;color:#f59e0b">53%</div><div style="font-size:10px;color:var(--txt-3);margin-top:4px">Episode Freq</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cluster 1 -->
+    <div class="glass-card reveal" id="cluster1" style="border-left:4px solid #9B59B6;margin-bottom:32px">
+      <div style="display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start">
+        <div style="text-align:center;min-width:180px">
+          <div style="width:80px;height:80px;border-radius:50%;background:rgba(139,92,246,0.15);border:2px solid #9B59B6;display:grid;place-items:center;margin:0 auto 12px;font-family:'Space Grotesk',sans-serif;font-size:1.3rem;font-weight:800;color:#9B59B6">C1</div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:700;color:#9B59B6">Cluster 1</div>
+          <div style="font-size:11px;color:var(--txt-3);margin-top:4px">Winter Hotspot</div>
+          <div style="margin-top:12px"><span class="grap-tag grap-4">Stage IV</span></div>
+        </div>
+        <div>
+          <h3 style="font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;margin-bottom:8px">Winter Severe Hotspot Zone</h3>
+          <p style="font-size:13px;color:var(--txt-2);margin-bottom:20px">36 station-month vectors representing exclusively winter months (Dec–Feb) at industrial stations. Every single day is a pollution episode. Low wind speed of 1.5 m/s combined with cold inversion layers creates maximum PM2.5 accumulation — up to 464 μg/m³.</p>
+          <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px">
+            <div style="text-align:center;padding:14px;background:rgba(0,0,0,0.2);border-radius:var(--radius-sm)"><div style="font-family:'Space Grotesk',sans-serif;font-size:1.4rem;font-weight:800;color:#9B59B6">307.7</div><div style="font-size:10px;color:var(--txt-3);margin-top:4px">PM2.5 μg/m³</div></div>
+            <div style="text-align:center;padding:14px;background:rgba(0,0,0,0.2);border-radius:var(--radius-sm)"><div style="font-family:'Space Grotesk',sans-serif;font-size:1.4rem;font-weight:800;color:#ef4444">661.3</div><div style="font-size:10px;color:var(--txt-3);margin-top:4px">PM10 μg/m³</div></div>
+            <div style="text-align:center;padding:14px;background:rgba(0,0,0,0.2);border-radius:var(--radius-sm)"><div style="font-family:'Space Grotesk',sans-serif;font-size:1.4rem;font-weight:800;color:#ef4444">421.4</div><div style="font-size:10px;color:var(--txt-3);margin-top:4px">Mean AQI</div></div>
+            <div style="text-align:center;padding:14px;background:rgba(0,0,0,0.2);border-radius:var(--radius-sm)"><div style="font-family:'Space Grotesk',sans-serif;font-size:1.4rem;font-weight:800;color:#f97316">1.5</div><div style="font-size:10px;color:var(--txt-3);margin-top:4px">WS m/s</div></div>
+            <div style="text-align:center;padding:14px;background:rgba(0,0,0,0.2);border-radius:var(--radius-sm)"><div style="font-family:'Space Grotesk',sans-serif;font-size:1.4rem;font-weight:800;color:#ef4444">100%</div><div style="font-size:10px;color:var(--txt-3);margin-top:4px">Episode Freq</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Charts -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head centered"><div class="section-tag">Visualizations</div><h2 class="section-title">Analysis Charts</h2></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px">
+      <div class="glass-card reveal">
+        <img src="images/kmeans_cluster_viz.jpg" alt="PCA Cluster Projection" style="width:100%;border-radius:var(--radius-sm);margin-bottom:14px"/>
+        <h4 style="font-weight:700;margin-bottom:6px">PCA 2D Cluster Projection</h4>
+        <p style="font-size:13px;color:var(--txt-2)">Principal component projection shows clear linear separation between the two clusters. Cluster centroids marked with star symbols. 71%+ of total variance explained by first two PCs.</p>
+      </div>
+      <div class="glass-card reveal">
+        <img src="images/aqi_heatmap_viz.jpg" alt="AQI Heatmap" style="width:100%;border-radius:var(--radius-sm);margin-bottom:14px"/>
+        <h4 style="font-weight:700;margin-bottom:6px">Cluster × Month AQI Heatmap</h4>
+        <p style="font-size:13px;color:var(--txt-2)">Reveals seasonal pollution rhythm. Cluster 1 dominates Jan–Feb (AQI 400+). Cluster 0 shows monsoon dip (Jul–Sep AQI ≈ 150). Strong winter-summer contrast visible.</p>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+      <div class="glass-card reveal">
+        <img src="images/radar_fingerprint_viz.jpg" alt="Radar Fingerprints" style="width:100%;border-radius:var(--radius-sm);margin-bottom:14px"/>
+        <h4 style="font-weight:700;margin-bottom:6px">Pollutant Fingerprint Radar Chart</h4>
+        <p style="font-size:13px;color:var(--txt-2)">Normalised spider chart of cluster pollutant profiles. Cluster 1 dominates all pollutant axes confirming its role as the severe pollution zone.</p>
+      </div>
+      <div class="glass-card reveal">
+        <img src="images/elbow_silhouette_chart.jpg" alt="Elbow Charts" style="width:100%;border-radius:var(--radius-sm);margin-bottom:14px"/>
+        <h4 style="font-weight:700;margin-bottom:6px">Optimal k Selection — Elbow + Silhouette</h4>
+        <p style="font-size:13px;color:var(--txt-2)">Silhouette peaks sharply at k=2 (0.702). Elbow inflection clearly visible. Davies-Bouldin lowest at k=2 (0.355). All three criteria converge on k=2.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="fg-brand"><div class="brand-logo"><span class="brand-logo-icon">⬡</span><div class="brand-logo-text"><span class="brand-name">ClusterAir</span><span class="brand-tag">SIH26082</span></div></div><p>K-Means Clustering of Air Pollution–Weather Coupled Zones</p></div>
+    <div class="fg-links"><div class="fgl-title">Pages</div><a href="index.html">Home</a><a href="methodology.html">Methodology</a><a href="results.html">Results</a><a href="validation.html">Validation</a><a href="map.html">Zone Map</a><a href="about.html">About</a></div>
+    <div class="fg-info"><div class="fgl-title">Author</div><p><strong>Aditya Tanzal</strong></p><p>Reg: 12410040 | Roll: 15</p></div>
+  </div>
+  <div class="footer-bottom container"><span>© 2026 Aditya Tanzal · SIH26082</span><span>Delhi NCR ClusterAir</span></div>
+</footer>
+<script src="app.js"></script>
+</body></html>

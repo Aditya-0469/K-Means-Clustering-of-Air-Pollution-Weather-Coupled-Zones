@@ -1,0 +1,19 @@
+station,cluster,cluster_label,lat,lon,zone_type,pm25_mean,ep_frac
+Anand_Vihar,1,Cluster 1 – Moderate Traffic-Residential,28.6469,77.3152,Traffic-Industrial,5.194331880401442,0.7263157754578359
+Bahadurgarh,1,Cluster 1 – Moderate Traffic-Residential,28.6942,76.9211,Industrial,5.249679055161082,0.7521011785432234
+Ballabhgarh,1,Cluster 1 – Moderate Traffic-Residential,28.3407,77.3176,Residential,4.76683164285186,0.4875700218391605
+Dwarka_Sector8,1,Cluster 1 – Moderate Traffic-Residential,28.5795,77.0601,Residential,4.766368559660924,0.49903400646909696
+Faridabad_NIT,1,Cluster 1 – Moderate Traffic-Residential,28.3837,77.309,Residential,4.762291506717517,0.49245253419632057
+Faridabad_Sector16,1,Cluster 1 – Moderate Traffic-Residential,28.4089,77.3178,Industrial,5.250141950328186,0.7556227598566307
+Ghaziabad_Loni,1,Cluster 1 – Moderate Traffic-Residential,28.7464,77.2862,Industrial,5.246325630202637,0.7516129032258064
+Ghaziabad_Vasundhra,1,Cluster 1 – Moderate Traffic-Residential,28.6615,77.3612,Residential,4.764504919653404,0.5078930228005181
+Greater_Noida,1,Cluster 1 – Moderate Traffic-Residential,28.4744,77.504,Mixed,4.930096261786618,0.5905494949800615
+Gurugram_Manesar,1,Cluster 1 – Moderate Traffic-Residential,28.359,76.9399,Industrial,5.25333142153323,0.7575287179035196
+Gurugram_Sector51,1,Cluster 1 – Moderate Traffic-Residential,28.4595,77.0266,IT-Commercial,4.767655188632539,0.48577644865971564
+Nehru_Nagar,1,Cluster 1 – Moderate Traffic-Residential,28.5669,77.2536,Industrial,5.250493800828114,0.7494683757321444
+Noida_Sector125,1,Cluster 1 – Moderate Traffic-Residential,28.5386,77.3252,Mixed,4.9289842184104655,0.5929298063311346
+Noida_Sector62,1,Cluster 1 – Moderate Traffic-Residential,28.6254,77.365,IT-Residential,4.670888978364788,0.44404498358483174
+Okhla_Phase2,1,Cluster 1 – Moderate Traffic-Residential,28.5305,77.2729,Industrial,5.25064556672659,0.753400270415011
+Punjabi_Bagh,1,Cluster 1 – Moderate Traffic-Residential,28.6745,77.1296,Residential-Traffic,5.0012538167011975,0.6183606188166857
+RK_Puram,1,Cluster 1 – Moderate Traffic-Residential,28.564,77.1855,Residential,4.762452052586722,0.48614518388000355
+Sonepat_Town,1,Cluster 1 – Moderate Traffic-Residential,28.9931,77.0151,Mixed,4.923820451826985,0.5819668458781362
